@@ -11,7 +11,7 @@ var server = http.createServer(function (request, response) {
     var parsedQuery = querystring.parse(postdata);
     console.log(parsedQuery);
     response.writeHead(200, { "Content-Type": "text/html" });
-    response.end("var1의 값 = " + postdata);
+    response.end("var1의 값 = " + parsedQuery.var2);
   });
 });
 
